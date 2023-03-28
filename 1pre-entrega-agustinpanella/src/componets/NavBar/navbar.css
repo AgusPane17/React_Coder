@@ -1,0 +1,59 @@
+.my-navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #810034;
+    
+
+    
+}
+
+.navbarNavegador{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    
+}
+
+.home{
+    color: #FFF600;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 1s;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+
+ }
+ .home:hover{
+    background-color: #FF005C;
+ }
+ 
+.catalogo{
+    color: #FFF600;
+    font-size: 20px;
+    transition: 1s;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+    
+
+.catalogo:hover{
+    color: #FFF600; 
+    background-color: #FF005C;
+ }
+
+.dropdown-menu{
+    background-color: #FF005C;
+}
+.dropdown-item{
+    color: #FFF600;
+}
+
+.dropdown-item:hover{
+    background-color: #810034;
+    color: #FFF600;
+}
+
