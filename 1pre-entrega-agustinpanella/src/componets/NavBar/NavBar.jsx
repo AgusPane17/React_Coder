@@ -9,15 +9,15 @@ export const NavBar = () => {
     
      <nav className="my-navbar">
       <div className="navbarNavegador">
-
         <Title/>
         
         <a className="home" href="#">Home</a>
         
         <NavbarDesplegable/>
-        
       </div>
+      
       <CartWidget/>
+     
      </nav>
   
   
