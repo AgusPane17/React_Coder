@@ -1,5 +1,7 @@
 .main{
     background-color: #26001B;
     height: 100vh;
+
+    height: auto;
     padding: 10%;
 }
