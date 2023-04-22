@@ -6,7 +6,7 @@ export const stock =[
         precioTomo: 2000,
         img:"../img/Call-of-the-night.jpg",
         descripcion:"La piba vampiro y un pibe con insomnio",
-        categoria: "Romance",
+        categoria: "romance",
         cantidadDeTomos: 11
 
     },
@@ -16,7 +16,7 @@ export const stock =[
         precioTomo:1800,
         img:"../img/SNK.jpg",
         descripcion:"Peleas epicas de bichos titanicos",
-        categoria: "Accion",
+        categoria: "accion",
         cantidadDeTomos:34
     },
     {
@@ -25,7 +25,7 @@ export const stock =[
         precioTomo:1800,
         img:"../img/kaiju-8.jpg",
         descripcion: "Se le mete el bicho y ahora se rebienta a piñas a bichos enormes del mar",
-        categoria: "Accion",
+        categoria: "accion",
         cantidadDeTomos:5
     },
     {
@@ -34,7 +34,7 @@ export const stock =[
         precioTomo: 2000,
         img:"../img/death-note.jpg",
         descripcion:"Dos pibes se hacen los sherlocks para ver quien mata a quien",
-        categoria:"Policial",
+        categoria:"policial",
         cantidadDeTomos: 13
     },
     {
@@ -43,7 +43,7 @@ export const stock =[
         precioTomo:3500,
         img:"../img/uzumaki.png",
         descripcion:"Muchos, demaciasdo y increiblemente lleno de espirales que dan miedo",
-        categoria:"Terror",
+        categoria:"terror",
         cantidadDeTomos:1
     },
     {
@@ -52,7 +52,7 @@ export const stock =[
         precioTomo:1800,
         img:"../img/SpyXFamily.jpg",
         descripcion:"El mejor espia tiene que formar una familia y tiene que hacer que esto funcione con mucha comedia de por medio xd",
-        categoria:"Comedia",
+        categoria:"comedia",
         cantidadDeTomos:10
     },
     {
@@ -61,7 +61,7 @@ export const stock =[
         precioTomo:2500,
         img:"../img/Pumpum.jpg",
         descripcion:"Crecer a veces no es grato y es medio retorcido, la vida de este pibe te lo muestra",
-        categoria:"Romance",
+        categoria:"romance",
         cantidadDeTomos:13
     }
 ]

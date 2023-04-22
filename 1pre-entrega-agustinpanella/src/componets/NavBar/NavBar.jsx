@@ -1,25 +1,24 @@
 import React from "react";
 import "./navbar.css";
 import { CartWidget } from "../CartWidget/CartWidget";
-import {NavbarDesplegable} from  "./NavbarDesplegable/NavbarDesplegable"
-import {Title} from './Title/Title'
+import { NavbarDesplegable } from "./NavbarDesplegable/NavbarDesplegable";
+import { Title } from "./Title/Title";
+import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    
-     <nav className="my-navbar">
+    <nav className="my-navbar">
       <div className="navbarNavegador">
-        <Title/>
+        <Title />
+
+        <NavLink className="home" to="/">
+          Inicio
+        </NavLink>
         
-        <a className="home" href="#">Home</a>
-        
-        <NavbarDesplegable/>
+        <NavbarDesplegable />
       </div>
-      
-      <CartWidget/>
-     
-     </nav>
-  
-  
+
+      <CartWidget />
+    </nav>
   );
 };

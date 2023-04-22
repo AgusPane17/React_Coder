@@ -1,19 +1,31 @@
-
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
-import {NavBar} from './componets/NavBar/NavBar';
-import { Main} from "./componets/Main/Main";
-import {ItemListContainer} from './componets/Main/ItenListContainer/ItemListContainer'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import { NavBar } from "./componets/NavBar/NavBar";
 
+import { ItemListContainer } from "./componets/ItenListContainer/ItemListContainer";
+
+import { BrowserRouter,Router, Navigate, Route, Routes  } from "react-router-dom";
 
 function App() {
   return (
     <>
-      
-      <NavBar/>
-      <Main/>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+        <Route
+          path="/"
+          element={<ItemListContainer greeting="Lista de mangas disponibles" />}
+        />
 
+        <Route
+          path="/mangas/:categoria"
+          element={<ItemListContainer greeting="Mangas de " />}
+        />
+
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+      </BrowserRouter>
     </>
   );
 }

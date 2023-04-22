@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom'
 
 export const NavbarDesplegable = () => {
   return (
@@ -14,19 +15,29 @@ export const NavbarDesplegable = () => {
       </a>
       <ul className="dropdown-menu">
         <li>
-          <a className="dropdown-item" href="#">
-            Action
-          </a>
+          <NavLink className="dropdown-item Link" to='/mangas/accion' >
+            Accion
+          </NavLink>
         </li>
         <li>
-          <a className="dropdown-item" href="#">
-            Comedy
-          </a>
+          <NavLink className="dropdown-item Link" to = '/mangas/comedia'>
+            Comedia
+          </NavLink>
         </li>
         <li>
-          <a className="dropdown-item" href="#">
+          <NavLink className="dropdown-item Link" to='/mangas/romance'>
             Romance
-          </a>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className="dropdown-item Link" to='/mangas/policial'>
+            Policial
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className="dropdown-item Link" to='/mangas/terror'>
+            Terror
+          </NavLink>
         </li>
       </ul>
     </>
