@@ -3,24 +3,25 @@ import { traerMangas } from "../../helper/pedirMangas";
 
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
-import { Loading } from "../ItenListContainer/Loading/Loading";
+import { Cargando } from '../ItenListContainer/Cargando/Cargando' ;
+import './itemDetailContainer.css'
 
 export const ItemDetailContainer = () => {
   const [manga, setManga] = useState(null);
-  const [Cargando, setCargando] = useState(false);
+  const [Loading, setLoading] = useState(false);
   const { mangaId } = useParams();
 
   useEffect(() => {
-    setCargando(true);
+    setLoading(true);
     traerMangas()
       .then((res) => {
         setManga(res.find((manga) => manga.id === Number(mangaId)));
       })
       .catch(console.error())
       .finally(() => {
-        setCargando(false);
+        setLoading(false);
       });
   }, [mangaId]);
 
-  return <div>{Cargando ? <Loading /> : <ItemDetail {...manga} />}</div>;
+  return <div className="fondo">{Loading ? < Cargando/> : <ItemDetail {...manga} />}</div>;
 };

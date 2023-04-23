@@ -17,22 +17,24 @@ export const ItemDetail = ({id, nombre, descripcion, precioTomo, img, categoria,
   
 
     return (
-        <div className='fondo'>
-            <div className='itemDetailContainer'>
+        
+        <div className='itemDetailContainer'>
             <div class= "seccion1">
                 <img className='imagenManga' src={img} alt="" />
             </div>
 
             <div class= "seccion2">
-                <h3>{nombre}</h3>
-                <h4>{categoria}</h4>
-                <p>{descripcion}</p>
-                <p>El precio por tomo es:{precioTomo}</p>
+                <h3 className='descripcion'>{nombre}</h3>
+                <h4 className='descripcion'>{categoria}</h4>
+                <p className='descripcion'>{descripcion}</p>
+                <p className='descripcion'>El precio por tomo es: {precioTomo}</p>
             </div>
 
-            <div class= "seccion3"></div>
+            <div class= "seccion3">
+            <Button onClick={volverAtras} className='btn btn-sucess botonParaAtras'>Volver atras</Button>
+            </div>
         </div>
-        </div>
+        
         
         
     )
