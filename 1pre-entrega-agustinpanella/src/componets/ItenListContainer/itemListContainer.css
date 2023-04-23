@@ -1,0 +1,22 @@
+
+.contenedorMangas{
+  
+   
+    
+    display: flex;
+    justify-content: center;
+    background-color: #26001B;
+    align-items: center;
+
+    min-height: 100vh;
+
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 2rem;   
+    
+}
+.textLista{
+    color: #FFF600;
+   }
