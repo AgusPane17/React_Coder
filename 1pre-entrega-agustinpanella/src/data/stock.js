@@ -2,7 +2,7 @@
 export const stock =[
     {
         id:1,
-        nombre: "Call of the nithg",
+        nombre: "Call of the night",
         precioTomo: 2000,
         img:"../img/Call-of-the-night.jpg",
         descripcion:"La piba vampiro y un pibe con insomnio",

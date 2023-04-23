@@ -1,0 +1,47 @@
+.fondo{
+    background-color:  #26001B;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemDetailContainer{
+    width: 1000px;
+    height: 600px;
+    background-color: #ff005c;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    
+    "img manga"
+    "infVenta infVenta ";
+
+    gap: 10px;
+    
+
+}
+
+.seccion1{
+    grid-area: img;
+    color: yellow;
+    background-color: yellow;
+    
+}
+
+.seccion2{
+    grid-area: manga;
+    
+}
+
+.seccion3{
+   grid-area: infVenta; 
+    background-color: blue;
+    
+}
+
+.imagenManga{
+    max-width: 200px;
+    max-height: 150px;
+}

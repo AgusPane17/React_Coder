@@ -6,8 +6,7 @@ export const Cargando = () => {
   return (
     <div className="listaCargando">
       <Loading />
-      <Loading />
-      <Loading />
+      
     </div>
   );
 };
