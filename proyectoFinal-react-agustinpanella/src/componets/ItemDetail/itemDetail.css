@@ -1,0 +1,68 @@
+
+
+.itemDetailContainer{
+    width: 1000px;
+    height: 600px;
+    background-color: #ff005c;
+    border-radius: 1rem;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    
+    "img manga"
+    "infVenta infVenta ";
+
+    gap: 2rem;
+    
+
+}
+
+.seccion1{
+    padding: 2rem;
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.seccion2{
+    grid-area: manga;
+    margin: 0;
+    padding: 1rem;
+    background-color: #810034;
+
+    max-width: 450px;
+    max-height: 300px;
+    bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.seccion3{
+   grid-area: infVenta; 
+    
+}
+
+.imagenManga{
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 0.5rem;
+}
+
+.descripcion{
+    color:  #FFF600;
+    border-radius: 2;
+}
+
+.botonParaAtras{
+    position: relative;
+    top: 100px;
+    left: 800px;
+}

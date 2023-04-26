@@ -1,0 +1,21 @@
+.contenedorCartWidget{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.contadorCarrito{
+    background-color: #ff005c;
+    color: #FFF600;
+    
+    font-size: 18px;
+    
+    border-radius: 2rem;
+
+    padding: 0.4rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    
+    
+}
