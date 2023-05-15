@@ -12,7 +12,7 @@ export const ItemListContainer = ({ greeting }) => {
 
   const [manga, setManga] = useState([]);
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const { categoria } = useParams();
 
@@ -23,13 +23,19 @@ export const ItemListContainer = ({ greeting }) => {
 
     mangas.get().then((res) => {
       const newItem = res.docs.map((doc) => {
-        return { id: doc.id, ...doc.data()};
+        return { id: doc.id, ...doc.data()};// recorre toddo el array por el id y trae los datos de cada uno
       });
+      
       console.table(newItem);
       setManga(newItem);
 
       // .catch((console.error))
     });
+    // setTimeout(()=>{
+    //   setLoading(false)
+    // },1500);
+    setLoading(false)
+    
   }, [categoria]);
 
   return (
