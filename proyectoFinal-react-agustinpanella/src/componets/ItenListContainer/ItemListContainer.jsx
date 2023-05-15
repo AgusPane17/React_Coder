@@ -25,16 +25,17 @@ export const ItemListContainer = ({ greeting }) => {
       const newItem = res.docs.map((doc) => {
         return { id: doc.id, ...doc.data()};// recorre toddo el array por el id y trae los datos de cada uno
       });
-      
       console.table(newItem);
       setManga(newItem);
+      setLoading(false)
+      
 
       // .catch((console.error))
     });
     // setTimeout(()=>{
-    //   setLoading(false)
+    //   setLoading(false)q
     // },1500);
-    setLoading(false)
+    
     
   }, [categoria]);
 
