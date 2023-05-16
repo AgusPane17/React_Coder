@@ -17,8 +17,8 @@ export const NavBar = () => {
         
         <NavbarDesplegable />
       </div>
-
-      <CartWidget />
+      <NavLink className='carrito' to='/cart'><CartWidget /> </NavLink>
+      
     </nav>
   );
 };

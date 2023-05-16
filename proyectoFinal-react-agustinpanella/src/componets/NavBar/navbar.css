@@ -5,6 +5,7 @@
     justify-content: space-between;
     background-color: #810034;
     
+    align-items: center;
 
     
 }
@@ -57,3 +58,8 @@
     color: #FFF600;
 }
 
+.carrito{
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

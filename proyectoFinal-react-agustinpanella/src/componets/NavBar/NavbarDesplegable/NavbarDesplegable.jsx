@@ -11,7 +11,7 @@ export const NavbarDesplegable = () => {
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        Category
+        Categoria
       </a>
       <ul className="dropdown-menu">
         <li>

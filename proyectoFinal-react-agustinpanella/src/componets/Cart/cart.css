@@ -1,0 +1,38 @@
+
+.contenedorGeneral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #26001B;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.contenedorLista{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #FF005C;
+    border-radius: 1rem;
+
+    width: 50%;
+}
+
+.listado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textoCart{
+    color: #FFF600;
+}
+.imgCart{
+    width: 10rem;
+    height: 6rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
