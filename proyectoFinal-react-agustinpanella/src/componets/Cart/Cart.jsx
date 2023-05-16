@@ -29,10 +29,10 @@ export const Cart = () => {
             {carrito.map((manga) => (
               <div className="listado">
                 <img className="imgCart" src={manga.img} alt="" />
-                <p className="textoCart"> Manga: {manga.nombre} Tomo{manga.numeroTomo}</p>
-                <p className="textoCart">Tomo: {manga.numeroTomo}</p>
-                <p className="textoCart"> ${manga.precioTomo}</p>
-                <p className="textoCart"> cantidad: {manga.counter}</p>
+                <p className="textoDescriptivoCart"> Manga: {manga.nombre} Tomo{manga.numeroTomo}</p>
+                <p className="textoDescriptivoCart">Tomo: {manga.numeroTomo}</p>
+                <p className="textoDescriptivoCart"> ${manga.precioTomo}</p>
+                <p className="textoDescriptivoCart"> cantidad: {manga.counter}</p>
                 <Button  onClick={() => quitarManga(manga.id)}>
                   <BsTrashFill />
                 </Button>
@@ -43,6 +43,8 @@ export const Cart = () => {
           <hr />
           <strong className="textoCart">Precio total: $ {precioTotal()}</strong>
           <hr />
+          <div className="botoneraCart">
+
           <Button className="btn btn-danger" onClick={limpiarCarrito}>
             
             Vaciar Carrito
@@ -54,6 +56,7 @@ export const Cart = () => {
           <Link className="btn btn-success" to="/checkout">
             Finalizar la compra 
           </Link>
+          </div>
         </>
       )}
     </div>

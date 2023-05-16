@@ -17,7 +17,8 @@
     background-color: #FF005C;
     border-radius: 1rem;
 
-    width: 50%;
+    min-width: 50%;
+    max-width: 70%;
 }
 
 .listado{
@@ -29,10 +30,25 @@
 
 .textoCart{
     color: #FFF600;
+    
+}
+.textoDescriptivoCart{
+    color: #FFF600;
+    font-size: 1.5rem;
+    
 }
 .imgCart{
     width: 10rem;
     height: 6rem;
     margin: 1rem;
     border-radius: 1rem;
+}
+
+.botoneraCart{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 3rem;
+    width: 50%;
 }

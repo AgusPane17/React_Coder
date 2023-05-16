@@ -30,7 +30,7 @@
 
 .seccion2{
     grid-area: manga;
-    margin: 0;
+    margin: 2.5rem;
     padding: 1rem;
     background-color: #810034;
 
@@ -42,7 +42,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    border-radius: 1rem;
 }
 
 .seccion3{
@@ -66,3 +66,10 @@
     top: 100px;
     left: 800px;
 }
+.contenedorAgregar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+

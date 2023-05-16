@@ -1,0 +1,40 @@
+.contendorCheckout{
+
+    
+    display: flex;
+    justify-content: center;
+    background-color: #26001B;
+    align-items: center;
+
+    min-height: 100vh;
+
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 2rem;   
+
+}
+.tituloCheckout{
+    color: #FFF600;
+}
+.conteinerInputCheckout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #FF005C;
+    border-radius: 2rem;
+}
+.form-group{
+    width: 50%;
+    padding: 1rem;
+}
+
+.botoneraCheckout{
+    display: flex;
+    flex-direction: row;
+}
+.botonBotoneraCheckout{
+    margin: 1rem;
+}

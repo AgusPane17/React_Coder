@@ -62,13 +62,13 @@ export const ItemDetail = ({
       </div>
 
       <div className="seccion3">
-        <div>
+        <div className="contenedorAgregar"> 
           <ItemQuatitySelector
             maximo={stock}
             cant={counter}
             modic={setCounter}
           />
-          <Button onClick={agregarAlCarrito} className="btn btn-sucess">
+          <Button onClick={agregarAlCarrito} className="btn btn-sucess botonAgregar">
             Agregar al carro
           </Button>
         </div>
