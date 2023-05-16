@@ -19,9 +19,12 @@ export const ItemListContainer = ({ greeting }) => {
   useEffect(() => {
     const db = getFirestore(); //esto trae la coneccion
 
-    const mangas = db.collection("mangas"); //trae el contenido
+    const tipoMangas = categoria
 
-    mangas.get().then((res) => {
+    ?db.collection('mangas').where('categoria','==',categoria):db.collection('mangas')
+
+    tipoMangas.get()
+    .then((res) => {
       const newItem = res.docs.map((doc) => {
         return { id: doc.id, ...doc.data()};// recorre toddo el array por el id y trae los datos de cada uno
       });
@@ -37,7 +40,7 @@ export const ItemListContainer = ({ greeting }) => {
     // },1500);
     
     
-  }, [categoria]);
+  }, [categoria,setLoading]);
 
   return (
     <div>
