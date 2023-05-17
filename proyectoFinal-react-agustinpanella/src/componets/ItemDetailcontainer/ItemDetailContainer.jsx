@@ -3,7 +3,7 @@ import  { useState, useEffect } from "react";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import { Cargando } from "../ItenListContainer/Cargando/Cargando";
-import "./ItemDetailContainer.css";
+import "./itemDetailContainer.css";
 import { getFirestore } from "../../Firebase/config";
 
 export const ItemDetailContainer = () => {
