@@ -5,7 +5,7 @@ import { Cargando } from "./Cargando/Cargando";
 // import { traerMangas } from "../../helper/pedirMangas";
 import { ItemList } from "./ItemList/ItemList";
 
-import { getFirestore } from "../../Firebase/config";
+import { getFirestore } from "../../Firebase/Config";
 
 export const ItemListContainer = ({ greeting }) => {
 

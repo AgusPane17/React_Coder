@@ -4,7 +4,7 @@ import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import { Cargando } from "../ItenListContainer/Cargando/Cargando";
 import "./itemDetailContainer.css";
-import { getFirestore } from "../../Firebase/config";
+import { getFirestore } from "../../Firebase/Config";
 
 export const ItemDetailContainer = () => {
   const [manga, setManga] = useState(null);
