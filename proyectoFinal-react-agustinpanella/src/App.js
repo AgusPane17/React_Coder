@@ -11,7 +11,7 @@ import { Checkout } from './componets/CheckOut/CheckOut';
 import { Cart } from "./componets/Cart/Cart";
 import {
   BrowserRouter,
-  Router,
+  
   Navigate,
   Route,
   Routes,

@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { ItemQuatitySelector } from "../ItemQuantitySelector/ItemQuatitySelector";
-import "./itemDetail.css";
+import "./ItemDetail.css";
 import { CartContext } from "../context/CartContext";
 import Swal from "sweetalert2";
 

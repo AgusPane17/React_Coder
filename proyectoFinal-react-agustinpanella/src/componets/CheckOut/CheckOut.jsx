@@ -1,11 +1,11 @@
 import React, { useState, useContext } from "react";
 import { CartContext } from "../context/CartContext";
-import { getFirestore } from "../../firebase/config";
+import { getFirestore } from "../../Firebase/config";
 import { Link } from "react-router-dom";
 import firebase from "firebase";
 import Swal from "sweetalert2";
 import "firebase/firestore";
-import './checkout.css'
+import './Checkout.css'
 
 export const Checkout = () => {
   const { carrito, precioTotal, limpiarCarrito } = useContext(CartContext);
@@ -16,6 +16,7 @@ export const Checkout = () => {
 
   const [emailU, setEmailU] = useState("");
   const [telefonoU, setTelefonoU] = useState("");
+  const [direccionU, setDireccionU] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,6 +28,7 @@ export const Checkout = () => {
         nombreU,
         apellidoU,
         telefonoU,
+        direccionU,
       },
       item: carrito,
       total_price: precioTotal(),
@@ -43,7 +45,7 @@ export const Checkout = () => {
         Swal.fire({
           icon: "success",
           title: "Se tomo tu pedido",
-          text: `Guarde su numero de compra: ${resp.id}`,
+          text: `Este es su numero de orden: ${resp.id}`,
           willClose: () => {
             limpiarCarrito();
 
@@ -106,6 +108,15 @@ export const Checkout = () => {
             className="form-control inputCheckout"
             onChange={(e) => setTelefonoU(e.target.value)}
             value={telefonoU}
+          />
+        </div>
+        <div className="form-group">
+          <input
+            type="text"
+            placeholder="Direccion"
+            className="form-control inputCheckout"
+            onChange={(e) => setDireccionU(e.target.value)}
+            value={direccionU}
           />
         </div>
         <div className="botoneraCheckout"> 
