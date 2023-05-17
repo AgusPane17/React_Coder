@@ -4,9 +4,10 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import { NavBar } from "./componets/NavBar/NavBar";
 import React from 'react';
 
+
 import { ItemListContainer } from "./componets/ItenListContainer/ItemListContainer";
 import { ItemDetailContainer } from "./componets/ItemDetailcontainer/ItemDetailContainer";
-import { CartProvider } from "./componets/Context/CartContext";
+import { CartProvider } from "./componets/context/CartContext";
 import { Checkout } from './componets/CheckOut/CheckOut';
 import { Cart } from "./componets/Cart/Cart";
 import {

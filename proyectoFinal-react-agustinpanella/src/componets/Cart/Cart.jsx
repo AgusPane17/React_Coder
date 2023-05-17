@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Button } from "react-bootstrap";
 import { BsTrashFill } from "react-icons/bs";
-import { CartContext } from "../Context/CartContext";
+import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
 import "./cart.css";
 
@@ -14,7 +14,7 @@ export const Cart = () => {
       {carrito.length === 0 ? (
         <>
           <h2 className="textoCart">Carrito vacio</h2>
-          
+
           <Link to="/" className="btn btn-success">
             {" "}
             Volver a comprar
@@ -23,20 +23,28 @@ export const Cart = () => {
       ) : (
         <>
           <h2 className="textoCart"> Lista de compra</h2>
-          
 
           <div className="contenedorLista">
             {carrito.map((manga) => (
-              <div className="listado">
+              
+              <div key={manga.id} className="listado">
                 <img className="imgCart" src={manga.img} alt="" />
-                <p className="textoDescriptivoCart"> Manga: {manga.nombre} Tomo{manga.numeroTomo}</p>
+                <p className="textoDescriptivoCart">
+                  {" "}
+                  Manga: {manga.nombre} Tomo{manga.numeroTomo}
+                </p>
                 <p className="textoDescriptivoCart">Tomo: {manga.numeroTomo}</p>
                 <p className="textoDescriptivoCart"> ${manga.precioTomo}</p>
-                <p className="textoDescriptivoCart"> cantidad: {manga.counter}</p>
-                <Button  onClick={() => quitarManga(manga.id)}>
+                <p className="textoDescriptivoCart">
+                  {" "}
+                  cantidad: {manga.counter}
+                </p>
+                <Button onClick={() => quitarManga(manga.id)}>
                   <BsTrashFill />
                 </Button>
               </div>
+              
+              
             ))}
           </div>
 
@@ -44,18 +52,15 @@ export const Cart = () => {
           <strong className="textoCart">Precio total: $ {precioTotal()}</strong>
           <hr />
           <div className="botoneraCart">
-
-          <Button className="btn btn-danger" onClick={limpiarCarrito}>
-            
-            Vaciar Carrito
-          </Button>
-          <Link to="/" className="btn btn-success">
-            
-            Seguir comprando
-          </Link>
-          <Link className="btn btn-success" to="/checkout">
-            Finalizar la compra 
-          </Link>
+            <Button className="btn btn-danger" onClick={limpiarCarrito}>
+              Vaciar Carrito
+            </Button>
+            <Link to="/" className="btn btn-success">
+              Seguir comprando
+            </Link>
+            <Link className="btn btn-success" to="/checkout">
+              Finalizar la compra
+            </Link>
           </div>
         </>
       )}

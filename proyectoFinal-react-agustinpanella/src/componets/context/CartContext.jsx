@@ -15,8 +15,6 @@ export const CartProvider = ({children}) =>{
 
     
 
-    console.log(carrito)
-
     const addMangaAlCarrito = (item) =>{
         setCarrito([...carrito, item])
     }
