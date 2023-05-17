@@ -6,7 +6,7 @@ export const NavbarDesplegable = () => {
     <>
       <a
         className="dropdown-toggle catalogo"
-        href="#"
+        href="role"
         role="button"
         data-bs-toggle="dropdown"
         aria-expanded="false"
