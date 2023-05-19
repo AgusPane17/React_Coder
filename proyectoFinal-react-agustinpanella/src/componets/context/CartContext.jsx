@@ -18,6 +18,7 @@ export const CartProvider = ({children}) =>{
     const addMangaAlCarrito = (item) =>{
         setCarrito([...carrito, item])
     }
+    
     const calcularCant = () =>{
         return carrito.reduce((acc, manga) => acc + manga.counter, 0)
     }

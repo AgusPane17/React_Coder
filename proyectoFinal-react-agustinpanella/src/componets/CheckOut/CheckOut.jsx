@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../Context/CartContext";
 import { getFirestore } from "../../Firebase/Config";
 import { Link } from "react-router-dom";
 import firebase from "firebase";
@@ -45,7 +45,7 @@ export const Checkout = () => {
         Swal.fire({
           icon: "success",
           title: "Se tomo tu pedido",
-          text: `Este es su numero de orden: ${resp.id}`,
+          text: `Este es su codigo de orden: ${resp.id}`,
           willClose: () => {
             limpiarCarrito();
 
@@ -56,7 +56,7 @@ export const Checkout = () => {
       })
 
     carrito.forEach((manga) => {
-      const docRef = db.collection("productos").doc(manga.id);
+      const docRef = db.collection("pedidos").doc(manga.id);
 
       docRef.get().then((doc) => {
         docRef.update({

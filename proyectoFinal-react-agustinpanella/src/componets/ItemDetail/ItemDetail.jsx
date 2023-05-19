@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { ItemQuatitySelector } from "../ItemQuantitySelector/ItemQuatitySelector";
 import "./ItemDetail.css";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../Context/CartContext";
 import Swal from "sweetalert2";
 
 export const ItemDetail = ({
